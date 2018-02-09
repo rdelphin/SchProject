@@ -11,7 +11,7 @@
     <h3>Dashboard</h3>
    
         
-    <asp:Button ID="btnSetup" runat="server" Text="Setup" Height="109" Width="109" />
+    <asp:Button ID="btnSetup" runat="server" Text="Setup" Height="109" Width="109" OnClick="btnSetup_Click" />
     <asp:Button ID="btnStudent" runat="server" Text="Student" Height="109" width="109" />
     <asp:Button ID="btnAttendance" runat="server" Text="Attendance" Height="109" Width="109" />
     <asp:Button ID="btnExam" runat="server" Text="Examination" Height="109" Width="109" />

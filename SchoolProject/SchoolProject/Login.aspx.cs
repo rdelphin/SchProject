@@ -13,5 +13,10 @@ namespace SchoolProject
         {
 
         }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DashBoard.aspx");
+        }
     }
 }
