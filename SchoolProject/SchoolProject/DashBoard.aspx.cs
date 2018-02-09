@@ -14,7 +14,7 @@ namespace SchoolProject
 
         }
 
-        protected void btnSetup_Click(object sender, EventArgs e)
+        protected void btnSettings_Click(object sender, EventArgs e)
         {
             Response.Redirect("GeneralSettings.aspx");
         }

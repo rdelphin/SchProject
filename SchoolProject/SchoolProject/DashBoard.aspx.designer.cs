@@ -13,22 +13,22 @@ namespace SchoolProject {
     public partial class DashBoard {
         
         /// <summary>
-        /// btnSetup control.
+        /// btnAdmission control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSetup;
+        protected global::System.Web.UI.WebControls.Button btnAdmission;
         
         /// <summary>
-        /// btnStudent control.
+        /// btnStudentDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnStudent;
+        protected global::System.Web.UI.WebControls.Button btnStudentDetails;
         
         /// <summary>
         /// btnAttendance control.
