@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,8 +16,47 @@ namespace SchoolProject
             {
                 calEffectiveBeginDate.Visible = false;
                 calEffectiveEndDate.Visible = false;
+                // GridView data source
+                DataTable dt = new DataTable();
+                dt.Columns.AddRange(new DataColumn[4]
+                        {
+                            new DataColumn("PhoneType"),
+                            new DataColumn("PhoneNumber"),
+                            new DataColumn("Extension"),
+                            new DataColumn("Primary")
+                        }
+                    );
+                ViewState["Phone"] = dt;
+                this.BindGrid();
+
+                // Gridview1  data source
+                DataTable dttr = new DataTable();
+                dttr.Columns.AddRange(new DataColumn[8]
+                {
+                    new DataColumn("TrimesterName"),
+                    new DataColumn("ShortName"),
+                    new DataColumn("Graded"),
+                    new DataColumn("Exam"),
+                    new DataColumn("BeginDate"),
+                    new DataColumn("EndDate"),
+                    new DataColumn("GradePostingBegins"),
+                    new DataColumn("GradePostingEnds")
+                });
+                ViewState["Trimester"] = dttr;
+                this.BindGrid();
+
             }
         }
+
+        protected void BindGrid()
+        {
+            GridView1.DataSource = (DataTable)ViewState["Phone"];
+            GridView1.DataBind();
+
+            Gridview2.DataSource = (DataTable)ViewState["Trimester"];
+            Gridview2.DataBind();
+        }
+    
 
         protected void imgEffectiveBeginDate_Click(object sender, ImageClickEventArgs e)
         {
@@ -66,6 +106,36 @@ namespace SchoolProject
             {
                 e.Day.IsSelectable = false;
             }
+        }
+
+        protected void btnAddToList_Click(object sender, EventArgs e)
+        {
+           
+            DataTable dt = (DataTable)ViewState["Phone"];
+            dt.Rows.Add(txtPhoneNumber.Text.Trim(), ddlPhoneType.Text.Trim(), txtExtension.Text.Trim(), chkPrimary.Checked);
+            ViewState["Phone"] = dt;
+            this.BindGrid();
+            ddlPhoneType.Text = string.Empty;
+            txtPhoneNumber.Text = string.Empty;
+            txtExtension.Text = string.Empty;
+            chkPrimary.Checked = false;
+        }
+
+        protected void btnAddtoListTrimester_Click(object sender, EventArgs e)
+        {
+            DataTable dttr = (DataTable)ViewState["Trimester"];
+            dttr.Rows.Add(txtTrimesterName.Text.Trim(), txtShortName.Text.Trim(), chkGraded.Checked, chkExam.Checked, txtBeginDate.Text.Trim(),
+            txtEnddate.Text.Trim(), txtGradePostingBeings.Text.Trim(), txtGradePostingEnds.Text.Trim());
+            ViewState["Trimester"] = dttr;
+            this.BindGrid();
+            txtTrimesterName.Text = string.Empty;
+            txtShortName.Text = string.Empty;
+            chkGraded.Checked = false;
+            chkExam.Checked = false;
+            txtBeginDate.Text = string.Empty;
+            txtEnddate.Text = string.Empty;
+            txtGradePostingBeings.Text = string.Empty;
+            txtGradePostingEnds.Text = string.Empty;
         }
     }
 }
