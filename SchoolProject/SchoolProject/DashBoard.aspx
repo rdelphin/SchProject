@@ -76,6 +76,6 @@
 					<h5 class="icon-name">Help</h5>
 				</div>
 			</div>
-		</div>					           
+		</div>	<!-- /.row -->				           
     </div> <!-- /.container -->
 </asp:Content>
