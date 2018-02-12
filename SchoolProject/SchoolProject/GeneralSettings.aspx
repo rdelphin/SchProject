@@ -16,45 +16,28 @@
 			<li class="nav-item">
 				<a class="nav-link" id="trimesters-tab" data-toggle="tab" href="#trimesters" role="tab" aria-controls="trimesters" aria-selected="false">Trimesters</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" id="grade-tab" data-toggle="tab" href="#grade" role="tab" aria-controls="grade" aria-selected="false">Grade Levels</a>
-			</li>
 		</ul>
 		<div class="tab-content" id="myTabContent">
 			<div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
-				<div class="form-group">
-					<asp:Label ID="lblSchoolName" runat="server">School Name</asp:Label>
-					<asp:TextBox ID="txtSchoolName" cssClass="form-control" runat="server"></asp:TextBox>
-				</div>
-				<div class="form-group">
-					<asp:Label ID="lblEffectiveBeginDate" runat="server">Effective Begin Date</asp:Label>
-					<div class="form-inline">
-						<asp:TextBox ID="txtEffectiveBeginDate" cssClass="form-control mr-sm-2" runat="server"> </asp:TextBox> 								
-						<asp:ImageButton ID="imgEffectiveBeginDate" ImageUrl="~/Resources/calendar.png" Width="25px" Height="25px" runat="server" OnClick="imgEffectiveBeginDate_Click" />
-						<asp:Calendar ID="calEffectiveBeginDate" runat="server" OnDayRender="calEffectiveBeginDate_DayRender" OnSelectionChanged="calEffectiveBeginDate_SelectionChanged"></asp:Calendar> 
-					</div>
-				</div>
-				<div class="form-group form-inline">
-					<asp:Label ID="lblEffectiveEndDate" runat="server">Effective End Date</asp:Label>
-					<asp:TextBox ID="txtEffectiveEndDate" cssClass="form-control mx-sm-2" runat="server"></asp:TextBox>
-					<asp:ImageButton ID="imgEffectiveEndDate" ImageUrl="~/Resources/calendar.png" Width="25px" Height="25px" runat="server" OnClick="imgEffectiveEndDate_Click" />
-					<asp:Calendar ID="calEffectiveEndDate" runat="server" OnDayRender="calEffectiveEndDate_DayRender" OnSelectionChanged="calEffectiveEndDate_SelectionChanged"></asp:Calendar> 
-				</div>
-				<div class="form-group">
-					<asp:Label ID="lblAttendance" runat="server">Attendance Type</asp:Label>
-					<asp:DropDownList ID="ddlAttendance" cssClass="form-control" runat="server">
-						<asp:ListItem Value="1" Text ="Daily"></asp:ListItem>
-					</asp:DropDownList> 
-				</div>
-				<div class="form-group">
-					<asp:Label ID="lblLogo" runat="server">Upload Logo</asp:Label>
-					<asp:FileUpload ID="fupLogo" runat="server" />
-				</div>
-				<div class="form-group">
-					<asp:Label ID="lblSchoolURL" runat="server">School Website</asp:Label>
-					<asp:TextBox ID="txtSchoolURL" cssClass="form-control" runat="server"></asp:TextBox> 
-				</div>
-			</div> <!-- end general tab content -->
+				<asp:Label ID="lblSchoolName" runat="server">School Name</asp:Label>
+				<asp:TextBox ID="txtSchoolName" runat="server"></asp:TextBox> <br />
+				<asp:Label ID="lblEffectiveBeginDate" runat="server">Effective Begin Date</asp:Label>
+				<asp:TextBox ID="txtEffectiveBeginDate" runat="server"> </asp:TextBox> 
+				<asp:ImageButton ID="imgEffectiveBeginDate" ImageUrl="~/Resources/calendar.png" Width="25px" Height="25px" runat="server" OnClick="imgEffectiveBeginDate_Click" />
+				<asp:Calendar ID="calEffectiveBeginDate" runat="server" OnDayRender="calEffectiveBeginDate_DayRender" OnSelectionChanged="calEffectiveBeginDate_SelectionChanged"></asp:Calendar> <br />
+				<asp:Label ID="lblEffectiveEndDate" runat="server">Effective End Date</asp:Label>
+				<asp:TextBox ID="txtEffectiveEndDate" runat="server"></asp:TextBox>
+				<asp:ImageButton ID="imgEffectiveEndDate" ImageUrl="~/Resources/calendar.png" Width="25px" Height="25px" runat="server" OnClick="imgEffectiveEndDate_Click" />
+				<asp:Calendar ID="calEffectiveEndDate" runat="server" OnDayRender="calEffectiveEndDate_DayRender" OnSelectionChanged="calEffectiveEndDate_SelectionChanged"></asp:Calendar> <br />
+				<asp:Label ID="lblAttendance" runat="server">Attendance Type</asp:Label>
+				<asp:DropDownList ID="ddlAttendance" runat="server">
+					<asp:ListItem Value="1" Text ="Daily"></asp:ListItem>
+				</asp:DropDownList> <br />
+				<asp:Label ID="lblLogo" runat="server">Upload Logo</asp:Label>
+				<asp:FileUpload ID="fupLogo" runat="server" /> <br />
+				<asp:Label ID="lblSchoolURL" runat="server">School Website</asp:Label>
+				<asp:TextBox ID="txtSchoolURL" runat="server"></asp:TextBox> <br />
+			</div>
 	
 			<!-- contact tab content -->
 			<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">	  
@@ -98,7 +81,7 @@
 				<asp:TextBox ID="txtContactFirstName" runat="server"></asp:TextBox> <br />
 				<asp:Label ID="lblContactLastName" runat="server">Last Name</asp:Label>
 				<asp:TextBox ID="txtContactLastName" runat="server"></asp:TextBox><br />
-			</div> <!-- end contact tab content -->
+			</div>
 	
 			<!-- trimesters tab content -->
 			<div class="tab-pane fade" id="trimesters" role="tabpanel" aria-labelledby="trimesters-tab">
@@ -132,14 +115,10 @@
 				<asp:TextBox ID="TextBox6" runat="server"></asp:TextBox><br />
 				<asp:Button ID="Button1" text="Add to List"  runat="server" OnClick="btnAddtoListTrimester_Click" />
 				<asp:Button ID="Button2" Text="Cancel" runat="server" />
-			</div> <!-- end trimesters tab content -->
-			
-			<!-- trimesters tab content -->
-			<div class="tab-pane fade" id="grade" role="tabpanel" aria-labelledby="grade-tab">
-				<h3>Grade Levels</h3>
-				<hr />
-			</div> <!-- end grade tab content -->
-			
+			</div>							
+
+			<h3>Grade Levels</h3>
+			<hr />
 		</div> <!-- tab-content -->
 	</div> <!-- /.container -->
 </asp:Content>
