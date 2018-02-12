@@ -11,7 +11,7 @@
 			<div class="col-6 col-md-3">
 				<div class="dash-box w-100">
 					<div class="icon">
-						<asp:ImageButton ID="btnAdmission" cssClass="img-fluid image" runat="server" Text="Admission" ImageUrl="https://cdn2.iconfinder.com/data/icons/seo-web-optomization-ultimate-set/512/custom_settings-512.png" />
+						<asp:ImageButton ID="btnAdmission" cssClass="img-fluid image" runat="server" ImageUrl="images/director.png" />
 					</div>
 					<h5 class="icon-name">Admission</h5>
 				</div>
@@ -19,7 +19,7 @@
 			<div class="col-6 col-md-3">
 				<div class="dash-box w-100">
 					<div class="icon">
-						<asp:ImageButton ID="btnStudentDetails" cssClass="img-fluid image" runat="server" Text="Student Details"/>
+						<asp:ImageButton ID="btnStudentDetails" cssClass="img-fluid image" runat="server" ImageUrl="images/director.png" />
 					</div>
 					<h5 class="icon-name">Student Details</h5>
 				</div>
@@ -27,7 +27,7 @@
 			<div class="col-6 col-md-3">
 				<div class="dash-box w-100">
 					<div class="icon">
-						<asp:ImageButton ID="btnAttendance" cssClass="img-fluid image" runat="server" Text="Attendance"/>
+						<asp:ImageButton ID="btnAttendance" cssClass="img-fluid image" runat="server"  ImageUrl="images/director.png"/>
 					</div>
 					<h5 class="icon-name">Attendance</h5>
 				</div>
@@ -35,7 +35,7 @@
 			<div class="col-6 col-md-3">
 				<div class="dash-box w-100">
 					<div class="icon">
-						<asp:ImageButton ID="btnExam" cssClass="img-fluid image" runat="server" Text="Examination"/>
+						<asp:ImageButton ID="btnExam" cssClass="img-fluid image" runat="server" ImageUrl="images/director.png" />
 					</div>
 					<h5 class="icon-name">Exmanination</h5>
 				</div>
@@ -47,7 +47,7 @@
 			<div class="col-6 col-md-3">
 				<div class="dash-box w-100">
 					<div class="icon">
-						<asp:ImageButton ID="btnHR" cssClass="img-fluid image" runat="server" Text="Human Resources"/>
+						<asp:ImageButton ID="btnHR" cssClass="img-fluid image" runat="server" ImageUrl="images/director.png" />
 					</div>
 					<h5 class="icon-name">Human Resources</h5>
 				</div>
@@ -55,7 +55,7 @@
 			<div class="col-6 col-md-3">
 				<div class="dash-box w-100">
 					<div class="icon">
-						<asp:ImageButton ID="btnSettings" cssClass="img-fluid image" runat="server" Text="Settings" OnClick="btnSettings_Click" />
+						<asp:ImageButton ID="btnSettings" cssClass="img-fluid image" runat="server" ImageUrl="images/director.png" OnClick="btnSettings_Click" />
 					</div>
 					<h5 class="icon-name">Settings</h5>
 				</div>
@@ -63,7 +63,7 @@
 			<div class="col-6 col-md-3">
 					<div class="dash-box w-100">
 					<div class="icon">
-						<asp:ImageButton ID="btnUsers" cssClass="img-fluid image" runat="server" Text ="Users"/>
+						<asp:ImageButton ID="btnUsers" cssClass="img-fluid image" runat="server" ImageUrl="images/director.png" />
 					</div>
 					<h5 class="icon-name">Users</h5>
 				</div>
@@ -71,7 +71,7 @@
 			<div class="col-6 col-md-3">
 				<div class="dash-box w-100">
 					<div class="icon">
-						<asp:ImageButton ID="btnHelp" cssClass="img-fluid image" runat="server" Text="Help"/>
+						<asp:ImageButton ID="btnHelp" cssClass="img-fluid image" runat="server" ImageUrl="images/director.png" />
 					</div>
 					<h5 class="icon-name">Help</h5>
 				</div>
