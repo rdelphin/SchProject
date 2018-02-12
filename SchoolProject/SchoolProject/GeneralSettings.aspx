@@ -20,9 +20,10 @@
 				<a class="nav-link" id="grade-tab" data-toggle="tab" href="#grade" role="tab" aria-controls="grade" aria-selected="false">Grade Levels</a>
 			</li>
 		</ul>
+		<div class="row">
+				<div class="col col-md-6">			
 		<div class="tab-content" id="myTabContent">
-			<div class="row">
-				<div class="col col-md-6">				
+				
 					<div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
 						<div class="form-group">
 							<asp:Label ID="lblSchoolName" runat="server">School Name</asp:Label>
