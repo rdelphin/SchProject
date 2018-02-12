@@ -1,0 +1,51 @@
+﻿body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+	background-color: #7c0124;
+}
+
+	.navbar .navbar-brand {
+		color: #fff;
+	}
+
+	.navbar .nav-link {
+		color: #fff;
+	}
+
+.button-item {
+	width: 150px;
+	height: 150px;
+	background-color: #fff;
+	border: none;
+}
+
+.dash-box {
+	background-color: #fff;
+	border: 1px solid #7c0124;
+	color: #7c0124;
+	margin-bottom: 10px;
+	padding: 15px;
+	text-align: center;
+}
+
+.dash-box:hover {
+	background: #7c0124;
+	color: #fff;
+	-webkit-transition: background-color 1000ms linear;
+	-moz-transition: background-color 1000ms linear;
+	-o-transition: background-color 1000ms linear;
+	-ms-transition: background-color 1000ms linear;
+	transition: background-color 500ms linear;
+}
+
+input#ContentPlaceHolder1_btnImage {
+	width: 100px;
+}
+
+.dash-box .icon-name {
+	font-size: 17px;
+	font-weight: bold;
+	padding-top: 15px;
+}
