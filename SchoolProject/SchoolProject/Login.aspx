@@ -29,6 +29,7 @@
 		</div>
 		<asp:Button ID="btnLogin" cssClass="btn btn-lg btn-primary btn-block" runat="server" Text="Login" OnClick="btnLogin_Click" /><br />
 		<asp:Label ID="lblAlert" runat="server"></asp:Label>
+		<p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
     </form>
 </body>
 </html>
