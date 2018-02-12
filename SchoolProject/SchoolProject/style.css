@@ -24,7 +24,7 @@
 .dash-box {
 	background-color: #fff;
 	border: 1px solid #7c0124;
-	color: #7c0124;
+	color: #7c0124;	
 	margin-bottom: 10px;
 	padding: 15px;
 	text-align: center;
@@ -33,6 +33,7 @@
 .dash-box:hover {
 	background: #7c0124;
 	color: #fff;
+	cursor: pointer;
 	-webkit-transition: background-color 1000ms linear;
 	-moz-transition: background-color 1000ms linear;
 	-o-transition: background-color 1000ms linear;
@@ -40,8 +41,8 @@
 	transition: background-color 500ms linear;
 }
 
-input#ContentPlaceHolder1_btnImage {
-	width: 100px;
+input.img-fluid {
+	cursor: pointer;
 }
 
 .dash-box .icon-name {
