@@ -37,7 +37,7 @@
 					<div class="icon">
 						<asp:ImageButton ID="btnExam" cssClass="img-fluid image" runat="server" ImageUrl="images/director.png" />
 					</div>
-					<h5 class="icon-name">Exmanination</h5>
+					<h5 class="icon-name">Examination</h5>
 				</div>
 			</div>
 		</div> <!-- /.first row -->
