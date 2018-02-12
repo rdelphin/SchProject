@@ -21,10 +21,12 @@
 			</li>
 		</ul>
 		<div class="row">
-				<div class="col col-md-6">			
-		<div class="tab-content" id="myTabContent">
+			<div class="col col-md-6">			
+				<div class="tab-content" id="myTabContent">
 				
 					<div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+						<h3 class="mt-4">General Settings</h3>
+						<hr />
 						<div class="form-group">
 							<asp:Label ID="lblSchoolName" runat="server">School Name</asp:Label>
 							<asp:TextBox ID="txtSchoolName" cssClass="form-control" runat="server"></asp:TextBox>
@@ -63,7 +65,8 @@
 	
 					<!-- contact tab content -->
 					<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">	  
-						<h3>Address</h3>
+						<h3 class="mt-4">Address</h3>
+						<hr />
 						<asp:Label ID="lblAddress" runat="server">Address</asp:Label>
 						<asp:TextBox ID="txtAddress" runat="server"></asp:TextBox> <br />
 						<asp:Label ID="lblCity" runat="server">City</asp:Label>
@@ -73,7 +76,7 @@
 						<asp:Label ID="lblCountry" runat="server">Country</asp:Label>
 						<asp:TextBox ID="txtCountry" runat="server"></asp:TextBox> <br />
     
-						<h3>Phone Information</h3>
+						<h3 class="mt-4">Phone Information</h3>
 						<hr />
 						<asp:GridView ID="GridView1" runat="server" CssClass="Grid" AutoGenerateColumns="false" EmptyDataText="No Record has been added">
 							<Columns>
@@ -96,7 +99,7 @@
 						<asp:CheckBox ID="chkPrimary" runat="server" Text="Primary Phone#" /><br />
 						<asp:Button ID="btnAddToList" Text="Add to List" runat="server" OnClick="btnAddToList_Click" />
 						<asp:Button ID="btnCancel" Text="Cancel" runat="server" /> <br />
-						<h3>Contact Information</h3>
+						<h3 class="mt-4">Contact Information</h3>
 						<hr />
 
 						<asp:Label ID="lblContactFirstName" runat="server">First Name</asp:Label>
@@ -107,7 +110,7 @@
 	
 					<!-- trimesters tab content -->
 					<div class="tab-pane fade" id="trimesters" role="tabpanel" aria-labelledby="trimesters-tab">
-						<h3>Trimesters</h3>
+						<h3 class="mt-4">Trimesters</h3>
 						<hr />
 						<asp:GridView ID="Gridview2" runat="server" CssClass="Grid" AutoGenerateColumns="false" EmptyDataText="No Records has been added.">
 							<Columns>
@@ -141,7 +144,7 @@
 			
 					<!-- grade tab content -->
 					<div class="tab-pane fade" id="grade" role="tabpanel" aria-labelledby="grade-tab">
-						<h3>Grade Levels</h3>
+						<h3 class="mt-4">Grade Levels</h3>
 						<hr />
 					</div> <!-- end grade tab content -->
 			
