@@ -382,13 +382,13 @@ namespace SchoolProject {
         protected global::System.Web.UI.WebControls.TextBox txtTrimesterName;
         
         /// <summary>
-        /// lblShortName control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblShortName;
+        protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
         /// txtShortName control.
@@ -445,13 +445,13 @@ namespace SchoolProject {
         protected global::System.Web.UI.WebControls.Label lblEndDate;
         
         /// <summary>
-        /// txtEnddate control.
+        /// txtEndDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEnddate;
+        protected global::System.Web.UI.WebControls.TextBox txtEndDate;
         
         /// <summary>
         /// lblGradePostingBegins control.
@@ -463,13 +463,13 @@ namespace SchoolProject {
         protected global::System.Web.UI.WebControls.Label lblGradePostingBegins;
         
         /// <summary>
-        /// txtGradePostingBeings control.
+        /// txtGradePostingBegins control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtGradePostingBeings;
+        protected global::System.Web.UI.WebControls.TextBox txtGradePostingBegins;
         
         /// <summary>
         /// lblGradePostingEnds control.

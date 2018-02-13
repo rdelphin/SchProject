@@ -153,7 +153,7 @@ namespace SchoolProject
         {
             DataTable dttr = (DataTable)ViewState["Trimester"];
             dttr.Rows.Add(txtTrimesterName.Text.Trim(), txtShortName.Text.Trim(), chkGraded.Checked, chkExam.Checked, txtBeginDate.Text.Trim(),
-            txtEnddate.Text.Trim(), txtGradePostingBeings.Text.Trim(), txtGradePostingEnds.Text.Trim());
+            txtEndDate.Text.Trim(), txtGradePostingBegins.Text.Trim(), txtGradePostingEnds.Text.Trim());
             ViewState["Trimester"] = dttr;
             this.BindGrid();
             txtTrimesterName.Text = string.Empty;
@@ -161,8 +161,8 @@ namespace SchoolProject
             chkGraded.Checked = false;
             chkExam.Checked = false;
             txtBeginDate.Text = string.Empty;
-            txtEnddate.Text = string.Empty;
-            txtGradePostingBeings.Text = string.Empty;
+            txtEndDate.Text = string.Empty;
+            txtGradePostingBegins.Text = string.Empty;
             txtGradePostingEnds.Text = string.Empty;
         }
     }
