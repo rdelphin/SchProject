@@ -45,29 +45,6 @@ namespace SchoolProject
                 ViewState["Trimester"] = dttr;
                 this.BindGrid();
 
-                // Grade Levels gridview
-                DataTable dtGradeLevels = new DataTable();
-                // Add columns to Datatable
-                dtGradeLevels.Columns.AddRange(new DataColumn[4]
-                {
-                    new DataColumn("GradeName"),
-                    new DataColumn("ShortName"),
-                    new DataColumn("Order"),
-                    new DataColumn("NextGradeLevel")
-                });
-
-                // set the default value
-                dtGradeLevels.Columns["GradeName"].DefaultValue = 0;
-                // Add Rows to Datatable
-                dtGradeLevels.Rows.Add("Premier Annee", "1er", "1", "Deuxieme Annee");
-                dtGradeLevels.Rows.Add("Deuxieme Annee", "2e", "2", "Troisieme Annee");
-                dtGradeLevels.Rows.Add("Troisieme Annee", "3e", "3", "Quatrieme Annee");
-                dtGradeLevels.Rows.Add("Quatrieme Annee", "4e", "4", "Cinquieme Annee");
-                dtGradeLevels.Rows.Add("Cinquieme Annee", "5e", "5", "Sixieme Annee");
-                dtGradeLevels.Rows.Add("Sixieme Annee", "6e", "7", "Septieme Annee");
-                ViewState["GradeLevel"] = dtGradeLevels;
-                this.BindGrid();
-
             }
         }
 
@@ -78,11 +55,6 @@ namespace SchoolProject
 
             Gridview2.DataSource = (DataTable)ViewState["Trimester"];
             Gridview2.DataBind();
-
-            grdGradeLevels.DataSource = (DataTable)ViewState["GradeLevel"];
-            grdGradeLevels.DataBind();
-
-            
         }
     
 
