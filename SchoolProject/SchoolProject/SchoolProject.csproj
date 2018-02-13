@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admission.aspx" />
     <Content Include="GeneralSettings.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -130,6 +131,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admission.aspx.cs">
+      <DependentUpon>Admission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admission.aspx.designer.cs">
+      <DependentUpon>Admission.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DashBoard.aspx.cs">
       <DependentUpon>DashBoard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
