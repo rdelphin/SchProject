@@ -125,6 +125,7 @@
 							</div>
 						</div>
 
+<<<<<<< HEAD
 						<div class="form-group row">
 							<asp:Label ID="lblPhoneNumber" class="col-sm-2 col-form-label" runat="server">Phone Number</asp:Label>
 							<div class="col-sm-6">
@@ -230,6 +231,15 @@
 					<div class="tab-pane fade" id="grade" role="tabpanel" aria-labelledby="grade-tab">
 						<h3 class="mt-4">Grade Levels</h3>
 						<hr />
+						<asp:GridView ID="grdGradeLevels" runat="server" CssClass="Grid" AutoGenerateColumns="false" EmptyDataText="No Grade Added">
+							<Columns>
+								<asp:BoundField DataField="GradeName" HeaderText="Grade Name" />
+								<asp:BoundField DataField="ShortName" HeaderText="Short Name" />
+								<asp:BoundField DataField="Order" HeaderText="Order" />
+								<asp:BoundField DataField="NextGradeLevel" HeaderText="Next Grade Level" />
+							</Columns>
+						</asp:GridView>
+
 					</div> <!-- end grade tab content -->
 			
 				</div> <!-- tab-content -->

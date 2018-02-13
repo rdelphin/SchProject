@@ -3,6 +3,7 @@
     
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
     <div class="container">
         <h1 class="mt-5 mb-4">School Dashboard</h1>
 
