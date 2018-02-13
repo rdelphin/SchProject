@@ -178,53 +178,53 @@
 						</asp:GridView> <br />
 
 						<div class="form-group row">
-							<asp:Label ID="Label1" class="col-sm-2 col-form-label" runat="server">Trimester Name</asp:Label>
+							<asp:Label ID="lblTrimesterName" class="col-sm-2 col-form-label" runat="server">Trimester Name</asp:Label>
 							<div class="col-sm-6">
-								<asp:TextBox ID="TextBox1" cssClass="form-control" runat="server"></asp:TextBox>
+								<asp:TextBox ID="txtTrimesterName" cssClass="form-control" runat="server"></asp:TextBox>
 							</div>
 						</div>
 
 						<div class="form-group row">
 							<asp:Label ID="Label2" class="col-sm-2 col-form-label" runat="server">Short Name</asp:Label>
 							<div class="col-sm-6">
-								<asp:TextBox ID="TextBox2" cssClass="form-control" runat="server"></asp:TextBox>
+								<asp:TextBox ID="txtShortName" cssClass="form-control" runat="server"></asp:TextBox>
 							</div>
 						</div>
 
 						<div class="form-check form-check-inline">
-							<asp:CheckBox ID="CheckBox1" cssClass="form-check-input" Text="Graded" runat="server" />
-							<asp:CheckBox ID="CheckBox2" Text="Exam" runat="server" />
+							<asp:CheckBox ID="chkGraded" cssClass="form-check-input" Text="Graded" runat="server" />
+							<asp:CheckBox ID="chkExam" Text="Exam" runat="server" />
 						</div>
 
 						<div class="form-group row">
-							<asp:Label ID="Label3" class="col-sm-2 col-form-label" runat="server">Begin Date</asp:Label>
+							<asp:Label ID="lblBeginDate" class="col-sm-2 col-form-label" runat="server">Begin Date</asp:Label>
 							<div class="col-sm-6">
-								<asp:TextBox ID="TextBox3" cssClass="form-control" runat="server"></asp:TextBox>
+								<asp:TextBox ID="txtBeginDate" cssClass="form-control" runat="server"></asp:TextBox>
 							</div>
 						</div>
 
 						<div class="form-group row">
-							<asp:Label ID="Label4" class="col-sm-2 col-form-label" runat="server">End Date</asp:Label>
+							<asp:Label ID="lblEndDate" class="col-sm-2 col-form-label" runat="server">End Date</asp:Label>
 							<div class="col-sm-6">
-								<asp:TextBox ID="TextBox4" cssClass="form-control" runat="server"></asp:TextBox>
+								<asp:TextBox ID="txtEndDate" cssClass="form-control" runat="server"></asp:TextBox>
 							</div>
 						</div>
 
 						<div class="form-group row">
-							<asp:Label ID="Label5" class="col-sm-2 col-form-label" runat="server">Grade Posting Begins</asp:Label>
+							<asp:Label ID="lblGradePostingBegins" class="col-sm-2 col-form-label" runat="server">Grade Posting Begins</asp:Label>
 							<div class="col-sm-6">
-								<asp:TextBox ID="TextBox5" cssClass="form-control" runat="server"></asp:TextBox>
+								<asp:TextBox ID="txtGradePostingBegins" cssClass="form-control" runat="server"></asp:TextBox>
 							</div>
 						</div>
 												
 						<div class="form-group row">
-							<asp:Label ID="Label6" class="col-sm-2 col-form-label" runat="server">Grade Posting Ends</asp:Label>
+							<asp:Label ID="lblGradePostingEnds" class="col-sm-2 col-form-label" runat="server">Grade Posting Ends</asp:Label>
 							<div class="col-sm-6">
-								<asp:TextBox ID="TextBox6" cssClass="form-control" runat="server"></asp:TextBox>
+								<asp:TextBox ID="txtGradePostingEnds" cssClass="form-control" runat="server"></asp:TextBox>
 							</div>
 						</div>
-						<asp:Button ID="Button1" cssClass="btn btn-success" text="Add to List"  runat="server" OnClick="btnAddtoListTrimester_Click" />
-						<asp:Button ID="Button2" cssClass="btn btn-danger" Text="Cancel" runat="server" />
+						<asp:Button ID="btnAddtoListTrimester" cssClass="btn btn-success" text="Add to List"  runat="server" OnClick="btnAddtoListTrimester_Click" />
+						<asp:Button ID="btbCancelTrimester" cssClass="btn btn-danger" Text="Cancel" runat="server" />
 					</div> <!-- end trimesters tab content -->
 			
 					<!-- grade tab content -->
