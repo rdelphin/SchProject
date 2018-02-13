@@ -19,7 +19,7 @@ namespace SchoolProject {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAdmission;
+        protected global::System.Web.UI.WebControls.ImageButton btnAdmission;
         
         /// <summary>
         /// btnStudentDetails control.
@@ -28,7 +28,7 @@ namespace SchoolProject {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnStudentDetails;
+        protected global::System.Web.UI.WebControls.ImageButton btnStudentDetails;
         
         /// <summary>
         /// btnAttendance control.
@@ -37,7 +37,7 @@ namespace SchoolProject {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAttendance;
+        protected global::System.Web.UI.WebControls.ImageButton btnAttendance;
         
         /// <summary>
         /// btnExam control.
@@ -46,7 +46,7 @@ namespace SchoolProject {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnExam;
+        protected global::System.Web.UI.WebControls.ImageButton btnExam;
         
         /// <summary>
         /// btnHR control.
@@ -55,7 +55,7 @@ namespace SchoolProject {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnHR;
+        protected global::System.Web.UI.WebControls.ImageButton btnHR;
         
         /// <summary>
         /// btnSettings control.
@@ -64,7 +64,7 @@ namespace SchoolProject {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSettings;
+        protected global::System.Web.UI.WebControls.ImageButton btnSettings;
         
         /// <summary>
         /// btnUsers control.
@@ -73,7 +73,7 @@ namespace SchoolProject {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnUsers;
+        protected global::System.Web.UI.WebControls.ImageButton btnUsers;
         
         /// <summary>
         /// btnHelp control.
@@ -82,15 +82,6 @@ namespace SchoolProject {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnHelp;
-        
-        /// <summary>
-        /// myButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button myButton;
+        protected global::System.Web.UI.WebControls.ImageButton btnHelp;
     }
 }
