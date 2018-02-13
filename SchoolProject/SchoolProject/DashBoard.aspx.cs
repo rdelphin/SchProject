@@ -21,7 +21,7 @@ namespace SchoolProject
 
         protected void btnAdmission_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Admission.apsx");
+            Response.Redirect("Admission.aspx");
         }
     }
 }
