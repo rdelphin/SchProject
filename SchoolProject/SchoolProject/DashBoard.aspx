@@ -12,7 +12,7 @@
 			<div class="col-6 col-md-3">
 				<div class="dash-box w-100">
 					<div class="icon">
-						<asp:ImageButton ID="btnAdmission" cssClass="img-fluid" runat="server" ImageUrl="images/admission.png" />
+						<asp:ImageButton ID="btnAdmission" cssClass="img-fluid" runat="server" ImageUrl="images/admission.png" OnClick="btnAdmission_Click" />
 					</div>
 					<h5 class="icon-name">Admission</h5>
 				</div>
