@@ -97,5 +97,13 @@
 
     <h3>Grade Levels</h3>
     <hr />
+    <asp:GridView ID="grdGradeLevels" runat="server" CssClass="Grid" AutoGenerateColumns="false" EmptyDataText="No Grade Added">
+        <Columns>
+            <asp:BoundField DataField="GradeName" HeaderText="Grade Name" />
+            <asp:BoundField DataField="ShortName" HeaderText="Short Name" />
+            <asp:BoundField DataField="Order" HeaderText="Order" />
+            <asp:BoundField DataField="NextGradeLevel" HeaderText="Next Grade Level" />
+        </Columns>
+    </asp:GridView>
 
 </asp:Content>
