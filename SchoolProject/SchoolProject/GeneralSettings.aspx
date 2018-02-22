@@ -125,7 +125,6 @@
 							</div>
 						</div>
 
-<<<<<<< HEAD
 						<div class="form-group row">
 							<asp:Label ID="lblPhoneNumber" class="col-sm-2 col-form-label" runat="server">Phone Number</asp:Label>
 							<div class="col-sm-6">
