@@ -54,8 +54,10 @@
 		
 						<div class="form-group row">
 							<asp:Label ID="lblGender" class="col-sm-2 col-form-label" runat="server">Gender</asp:Label>
-							<asp:RadioButton ID="rdoMale" GroupName="Gender" Text="Male" runat="server" AutoPostBack="true" />
-							<asp:RadioButton ID="rdoFemale" GroupName="Gender" Text="Female" runat="server" AutoPostBack="true" /> 
+							<div class="col-sm-6 form-check form-check-inline">
+								<asp:RadioButton ID="rdoMale" CssClass="form-check-input" GroupName="Gender" Text=" Male" runat="server" AutoPostBack="true" />
+								<asp:RadioButton ID="rdoFemale" CssClass="form-check-input" GroupName="Gender" Text=" Female" runat="server" AutoPostBack="true" /> 
+							</div>
 						</div>
 
 						<div class="form-group row">
